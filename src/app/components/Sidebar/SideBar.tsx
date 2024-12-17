@@ -1,7 +1,7 @@
 import React from "react";
 import Contact from "./Contact";
 import Languages from "./Languages";
-
+import Image from "next/image";
 const SideBar: React.FC = () => {
   return (
     <aside className="bg-gray-900 text-white md:h-screen w-full overflow-y-auto flex-shrink-0">
@@ -13,11 +13,13 @@ const SideBar: React.FC = () => {
           {" "}
           {/* Increased bottom margin */}
           <div className="relative w-40 h-40 mx-auto overflow-hidden rounded-full shadow-lg">
-            <img
-              src="/profile1.png"
-              className="w-full object-cover"
-              alt="Profile Picture"
-            />
+            <Image
+           src="/profile1.png"
+           alt="Profile Picture"
+           className="w-full object-cover"
+           width={160}
+           height={160} 
+         />
           </div>
           <div className="mt-4">
             <h1 className="text-2xl font-bold">Hasnain Ahmed</h1>
